@@ -2,7 +2,7 @@
 // Birthday Surprise Website ❤️
 
 // Secret demo password
-const correctPassword = "bubu2026";
+const correctPassword = "Otherhalf❤️❤️";
 
 // Unlock the birthday website
 function unlock() {

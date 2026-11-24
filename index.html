@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Bubu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="lockScreen" class="screen">
+        <div class="card">
+            <div class="bow">🎀</div>
+            <h1>Hey, Bubu! ❤️</h1>
+
+            <p>Someone has created a little world just for you.</p>
+
+            <div class="gift">🎁</div>
+
+            <p>Enter your secret password</p>
+
+            <input type="password" id="password"
+                   placeholder="Your secret password">
+
+            <button onclick="unlock()">
+                Open My Surprise 💗
+            </button>
+
+            <p id="error"></p>
+            <p>Made with love, just for Samiii ♡</p>
+        </div>
+    </section>
+
+    <section id="homeScreen" class="screen hidden">
+        <div class="card">
+            <div class="bow">🎀</div>
+
+            <h1>Happy Birthday!</h1>
+            <h2>My Dearest Samiii 💕</h2>
+
+            <div class="cake">🎂</div>
+
+            <p>
+                Happy Birthday, Bubuuu!
+                You make ordinary days feel magical.
+                I hope your day is filled with happiness,
+                laughter, love and beautiful memories.
+            </p>
+
+            <h3>December 6, 2008</h3>
+
+            <p>You are my favourite person. ♡</p>
+
+            <button onclick="showMessage()">
+                A Little Message For You 💌
+            </button>
+            
+            <button onclick="openMemories()">
+                See Our Memories 📸
+            </button>
+
+            <p id="extraMessage" class="hidden">
+                I'll always wish to see you smiling.
+                Happy Birthday, my Bubu! ❤️
+            </p>
+        </div>
+    </section>
+
+<!-- OUR MEMORIES SECTION -->
+<section id="memories" class="screen hidden">
+    <div class="card memories-card">
+
+        <h1>Our Memories ♡</h1>
+
+        <p>Every picture holds a little piece of happiness.</p>
+
+        <div class="gallery">
+
+            <div class="photo">
+                <img src="images/memory1.jpeg" alt="Our first memory">
+                <p>Our beautiful memory 💗</p>
+            </div>
+
+            <div class="photo">
+                <img src="images/memory2.jpeg" alt="A special moment">
+                <p>My favourite moment 🎀</p>
+            </div>
+
+            <div class="photo">
+                <img src="images/memory3.jpeg" alt="Our happy memories">
+                <p>Forever special ♡</p>
+            </div>
+
+             <div class="photo">
+                <img src="images/memory4.jpeg" alt="Our first memory">
+                <p>Our beautiful memory 💗</p>
+            </div>
+
+            <div class="photo">
+                <img src="images/memory5.jpeg" alt="A special moment">
+                <p>My favourite moment 🎀</p>
+            </div>
+
+            <div class="photo">
+                <img src="images/memory6.jpeg" alt="Our happy memories">
+                <p>Forever special ♡</p>
+            </div>
+
+             <div class="photo">
+                <img src="images/memory7.jpeg" alt="Our first memory">
+                <p>Our beautiful memory 💗</p>
+            </div>
+
+            <div class="photo">
+                <img src="images/memory8.jpeg" alt="A special moment">
+                <p>My favourite moment 🎀</p>
+            </div>
+
+            <div class="photo">
+                <img src="images/memory9.jpeg" alt="Our happy memories">
+                <p>Forever special ♡</p>
+            </div>
+
+              <div class="photo">
+                <img src="images/memory10.jpeg" alt="Our first memory">
+                <p>Our beautiful memory 💗</p>
+            </div>
+
+            <div class="photo">
+                <img src="images/memory11.jpeg" alt="A special moment">
+                <p>My favourite moment 🎀</p>
+            </div>
+
+        </div>
+
+        <button onclick="openLetter()">
+            Open My Secret Letter 💌
+        </button>
+
+        <button onclick="goHome()">
+            Back to Birthday Home 🏠
+        </button>
+
+    </div>
+</section>
+
+
+<!-- LOVE LETTER SECTION -->
+<section id="letterScreen" class="screen hidden">
+
+    <div class="card letter-card">
+
+        <div class="letter-decoration">💌</div>
+
+        <h1>A Letter For You, Samiii</h1>
+
+        <p class="letter-subtitle">
+            Open this whenever you miss me. ❤️
+        </p>
+
+        <div class="letter-content">
+
+            <h2>My Dearest Samiii, ❤️</h2>
+
+            <p>
+                I don't know if words will ever be enough
+                to explain how special you are to me.
+                But today, I want to try.
+            </p>
+
+            <p>
+                You are one of the most beautiful parts
+                of my life. Your smile makes my difficult
+                days easier, your happiness means more
+                to me than you could ever imagine,
+                and every little moment with you becomes
+                a memory I want to keep forever.
+            </p>
+
+            <p>
+                I may not always find the perfect words
+                or know the perfect things to do,
+                but I hope you never doubt how much
+                you mean to me.
+            </p>
+
+            <p>
+                On your birthday, I wish you endless
+                happiness, beautiful dreams, countless
+                reasons to smile and everything your
+                heart wishes for.
+            </p>
+
+            <p>
+                Thank you for being you.
+                Thank you for making ordinary moments
+                feel extraordinary.
+            </p>
+
+            <h3>
+                Happy Birthday, My Bubu! 🎂💕
+            </h3>
+
+            <p class="letter-sign">
+                Forever with love,<br>
+                Your Bubu's favourite person ❤️
+            </p>
+
+        </div>
+
+        <button onclick="goHome()">
+            Back to Birthday Home 🏠
+        </button>
+
+    </div>
+
+    <button onclick="openFinalSurprise()">
+    Open Your Final Surprise 🎁
+    </button>
+
+</section>
+
+
+
+    <audio id="music" loop>
+        <source src="music/our-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+<!-- Final Birthday Surprise -->
+<section id="finalSurprise" class="hidden">
+
+    <h1>Happy Birthday Samiii! 🎂</h1>
+
+    <h2>Your Special Surprise Is Here! ❤️</h2>
+
+    <div class="gift-box" onclick="openGift()">
+        🎁
+    </div>
+
+    <div id="giftMessage" class="hidden">
+
+    <h2>A Special Memory ❤️</h2>
+
+    <img
+        src="images/samiii.jpeg"
+        alt="A special birthday memory"
+        class="surprise-photo"
+    >
+
+    <h2>Happy Birthday Samiii! 🎂</h2>
+
+    <p>
+        You make every memory special.
+        Wishing you endless happiness! 💗
+    </p>
+
+    </div>
+
+    <button onclick="goHome()">
+        Back to Birthday Home 🏠
+    </button>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,384 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(
+        135deg,
+        #ffe1ed,
+        #fff0f5,
+        #fbd0e0
+    );
+    min-height: 100vh;
+    color: #a94470;
+    overflow-x: hidden;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.88);
+    width: 100%;
+    max-width: 440px;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(190, 80, 125, 0.18);
+    border: 2px solid white;
+    animation: appear 1s ease;
+}
+
+.bow {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #d65c91;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: #c75c89;
+    margin: 15px 0;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.gift, .cake {
+    font-size: 75px;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #f4b4ce;
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #d65c91;
+}
+
+button {
+    background: linear-gradient(
+        135deg,
+        #ee8eb5,
+        #d65c91
+    );
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px #eab0c9;
+}
+
+#error {
+    color: #d6336c;
+    margin-top: 12px;
+}
+
+.birthday-card {
+    max-width: 520px;
+}
+
+.message {
+    line-height: 1.8;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+.love {
+    font-style: italic;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#extraMessage {
+    margin-top: 22px;
+    line-height: 1.8;
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* OUR MEMORIES GALLERY */
+
+.memories-card {
+    max-width: 750px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.photo {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(190, 80, 125, 0.15);
+    transform: rotate(-2deg);
+    transition: 0.3s;
+}
+
+.photo:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.photo:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.photo img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.photo p {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #c75c89;
+}
+
+/* =========================
+   LOVE LETTER FOR SAMIII
+========================= */
+
+.letter-card {
+    max-width: 750px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px 30px;
+    background: #fffafd;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(190, 80, 125, 0.15);
+    text-align: center;
+}
+
+.letter-decoration {
+    font-size: 55px;
+    margin-bottom: 15px;
+    animation: heartBeat 1.5s infinite;
+}
+
+.letter-card h1 {
+    color: #c75c89;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.letter-subtitle {
+    color: #b66b89;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.letter-content {
+    background: #fff3f7;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: left;
+    line-height: 1.9;
+    color: #8f4665;
+}
+
+.letter-content h2 {
+    color: #c75c89;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.letter-content p {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.letter-content h3 {
+    text-align: center;
+    color: #c75c89;
+    margin-top: 25px;
+}
+
+.letter-sign {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    color: #c75c89;
+    margin-top: 30px;
+}
+
+@keyframes heartBeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+/* FINAL BIRTHDAY SURPRISE */
+
+#finalSurprise {
+    min-height: 100vh;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffb6d5,
+        #ffe4ef
+    );
+    color: #c2185b;
+    overflow: hidden;
+}
+
+#finalSurprise h1 {
+    font-size: 38px;
+    animation: fadeIn 2s ease;
+}
+
+#finalSurprise h2 {
+    margin: 25px 0;
+}
+
+.gift-box {
+    font-size: 110px;
+    cursor: pointer;
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+    margin: 30px;
+}
+
+#giftMessage {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d63384;
+    animation: fadeIn 2s ease;
+    margin: 25px;
+}
+
+#finalSurprise button {
+    background: #ff4f91;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#finalSurprise button:hover {
+    background: #e91e63;
+    transform: scale(1.05);
+}
+
+/* Gift animation */
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Fade animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating hearts */
+
+#finalSurprise::before {
+    content: "💕 💗 💖 💝 💕";
+    display: block;
+    font-size: 30px;
+    animation: floatHearts 4s infinite alternate;
+}
+
+@keyframes floatHearts {
+    from {
+        transform: translateY(10px);
+    }
+
+    to {
+        transform: translateY(-25px);
+    }
+}
+.surprise-photo {
+    width: 280px;
+    max-width: 85%;
+    border: 6px solid white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(200, 50, 120, 0.3);
+    animation: photoPop 1s ease;
+    margin: 20px auto;
+}
+
+@keyframes photoPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.2) translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
